@@ -1,0 +1,94 @@
+/* Container for the whole page */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Common button style */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  width: 200px; /* Set a fixed width for buttons */
+  margin: 10px 0; /* Add space between buttons */
+}
+
+/* Login button style */
+.login-btn {
+  background-color: #4CAF50; /* Green for Login */
+  color: white;
+}
+
+.login-btn:hover {
+  background-color: #45a049; /* Darker Green on hover */
+}
+
+/* Register button style */
+.register-btn {
+  background-color: #008CBA; /* Blue for Register */
+  color: white;
+}
+
+.register-btn:hover {
+  background-color: #007bb5; /* Darker Blue on hover */
+}
+
+/* Login form container */
+.form-container {
+  width: 100%;  /* Allow form to stretch fully */
+  max-width: 600px;  /* Increase max-width to make the form wider */
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f4f4f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;  /* Space between form elements */
+}
+
+h3 {
+  text-align: center;
+}
+
+/* Flexbox for form group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box; /* Prevent padding from affecting width */
+  margin-bottom: 5px; /* Add space below inputs */
+}
+
+/* Error text styling */
+.error-text {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px; /* Ensure there’s space between the input and the error message */
+}
+
+/* Status message styling */
+.status-message {
+  color: green;
+  font-size: 16px;
+  text-align: center;
+}
+
+button:disabled {
+  background-color: #ccc; /* Disable button color */
+  cursor: not-allowed; /* Change cursor on disabled */
+}

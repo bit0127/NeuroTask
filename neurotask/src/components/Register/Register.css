@@ -1,0 +1,128 @@
+/* Register.css */
+
+.register-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+.status-message {
+  color: green;
+  font-size: 16px;
+  text-align: center;
+}
+
+.error-text {
+  color: red;
+  font-size: 14px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:disabled {
+  background-color: #ccc;
+}
+
+button:hover(:disabled) {
+  background-color: #0056b3;
+}
+
+/* Password field container with eye icon inside the input */
+.password-container {
+  position: relative; /* Positioning context for the eye icon */
+  width: 100%;
+}
+
+.password-container input {
+  width: 100%; /* Full width for the input */
+  padding-right: 40px; /* Space for the eye icon */
+}
+
+.toggle-password-btn {
+  position: absolute;
+  right: 10px; /* Place the eye icon to the right */
+  top: 50%;
+  transform: translateY(-50%); /* Center the icon vertically */
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 18px; /* Size of the eye icon */
+}
+
+.toggle-password-btn:hover {
+  color: #0056b3;
+}
+
+/* Ensure consistent width for all input fields */
+input[type="email"],
+input[type="password"],
+input[name="confirmPassword"] {
+  width: 100%; /* Ensure the inputs take full width */
+  box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .register-container {
+    padding: 15px;
+  }
+
+  input {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
